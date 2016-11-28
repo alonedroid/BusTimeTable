@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/frame_margin"
+        >
+
+        <EditText
+            android:id="@+id/input_search_bus_stop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_space_48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_space_8dp"
+            android:hint="バス停を入力"
+            />
+
+        <TextView
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_space_48dp"
+            android:layout_below="@id/input_search_bus_stop"
+            android:layout_margin="@dimen/dimen_space_16dp"
+            android:background="@drawable/shape_rouned_corners_secondary"
+            android:text="検索"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+        <ListView
+            android:id="@+id/list_search_station_candidate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_search"
+            />
+    </RelativeLayout>
+</layout>
